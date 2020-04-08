@@ -2,8 +2,12 @@
   <head>
     <title>Idle Poppup</title>
     <style>
+      html {
+        height: 80px;
+      }
       body {
         text-align: center;
+        height: 25px;
       }
       button {
         margin: 5px;
@@ -12,13 +16,11 @@
     </style>
   </head>
   <body>
-    <form>
-      <label for="minutes">Minutes (1 or more):</label>
-      <input type="number" id="minutes" name="minutes" min="1" value="10">
-      <button id='start'>Start</button>
-      <button id='stop'>Stop</button>
-      <button id='test'>Test</button>
-    </form>
+    <label for="minutes">Minutes (1 or more):</label>
+    <input type="number" id="minutes" name="minutes" min="1" value="10">
+    <button id='start'>Start</button>
+    <button id='stop'>Stop</button>
+    <button id='test'>Test</button>
    <!-- link to non-persistent background script -->
    <script src="popup.js"></script>
   </body>
